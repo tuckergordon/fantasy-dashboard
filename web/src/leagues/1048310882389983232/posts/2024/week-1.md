@@ -5,8 +5,8 @@ published: true
 ---
 
 # Week 1 Recap
-<!-- 
-![An overweight bugs bunny lying on the couch watching football. He has a fever and there are tissues around him. 3d digital art](<[Isolated.png](https://i.postimg.cc/Y9mrN2ZG/Designer.jpg)
+
+<!-- ![An overweight bugs bunny lying on the couch watching football. He has a fever and there are tissues around him. 3d digital art](<[Isolated.png](https://i.postimg.cc/Y9mrN2ZG/Designer.jpg) -->
 
 Been a busy week! I’ve been wondering how I ever felt like I had time for writing these things and honestly was considering just not doing it this week or kinda phoning it in (which still might happen, I’m just starting out writing this thing). But the gods decided to punish me for even considering that annnddd I tested positive for Covid this morning. So I guess we might as well do this thing!
 
@@ -104,4 +104,4 @@ Joe got some encouraging sights in week 1: Jameson Williams finally had a big ga
 
 #### 12. McConkey Tonk Honky Bonk (preseason: 12)
 
-Pretty good debut for this team’s namesake, who scored 12.40 points week 1. Devonta Smith looked solid as well, and with 2 QBs I actually may end up moving Max above Joe in future weeks, especially if Jordan Mason ends up playing more. And a pretty good week for Max’s tradechips I mean RBs! -->
+Pretty good debut for this team’s namesake, who scored 12.40 points week 1. Devonta Smith looked solid as well, and with 2 QBs I actually may end up moving Max above Joe in future weeks, especially if Jordan Mason ends up playing more. And a pretty good week for Max’s tradechips I mean RBs!
