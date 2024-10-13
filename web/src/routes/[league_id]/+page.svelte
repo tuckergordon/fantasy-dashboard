@@ -1,11 +1,16 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import Standings from '$lib/components/standings.svelte';
 
 	export let data;
-	const { metadata, posts } = data;
+	const { metadata, posts, standings } = data;
 </script>
 
 <h1>{metadata.name}</h1>
+
+<section>
+	<Standings {standings} />
+</section>
 
 <!-- Posts -->
 <section>
