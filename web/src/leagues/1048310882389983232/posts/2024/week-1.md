@@ -6,7 +6,7 @@ published: true
 
 # Week 1 Recap
 
-<!-- ![An overweight bugs bunny lying on the couch watching football. He has a fever and there are tissues around him. 3d digital art](<[Isolated.png](https://i.postimg.cc/Y9mrN2ZG/Designer.jpg) -->
+![An overweight bugs bunny lying on the couch watching football. He has a fever and there are tissues around him. 3d digital art](/images/chungus-week-1.jpeg 'Chungus Week 1')
 
 Been a busy week! I’ve been wondering how I ever felt like I had time for writing these things and honestly was considering just not doing it this week or kinda phoning it in (which still might happen, I’m just starting out writing this thing). But the gods decided to punish me for even considering that annnddd I tested positive for Covid this morning. So I guess we might as well do this thing!
 
