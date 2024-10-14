@@ -1,13 +1,9 @@
 ---
-title: Week 4
+title: Week 4 Recap
 date: '10/1/2024'
 published: true
+image: '/images/chungus/chungus-week-4.jpeg'
 ---
-
-# Week 4 Recap
-
-![An overweight bugs bunny wearing a chiefs number 15 jersey looks on in horror at an ambulance. Another bugs bunny, this one wearing a chiefs number 4 jersey, has a cast on his leg and is being loaded into the ambulance. 3D digital art](/images/chungus-week-4.jpeg 'Chungus Week 4')
-
 
 ## 🏆 Standings
 

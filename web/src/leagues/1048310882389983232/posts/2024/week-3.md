@@ -1,14 +1,13 @@
 ---
-title: Week 3
+title: Week 3 Recap
 date: '9/24/2024'
 published: true
+image: '/images/chungus/chungus-week-3-a.jpeg'
 ---
 
-# Week 3 Recap
+<!-- Additional images should be placed inline like this -->
 
-![Two skeletons driving in a car at night on the interstate with no other cars around them. One is wearing a number 88 cowboys jersey and the other is wearing a number 26 eagles jersey. 3d digital art](/images/chungus-week-3-a.jpeg 'Chungus Week 3')
-
-![Two overweight bugs bunnies in a boxing match in a cereal bowl. One is wearing a number 1 cowboys jersey and the other is wearing a number 24 bears jersey. 3d digital art](/images/chungus-week-3-b.jpeg 'Chungus Week 3')
+![Two overweight bugs bunnies in a boxing match in a cereal bowl. One is wearing a number 1 cowboys jersey and the other is wearing a number 24 bears jersey. 3d digital art](/images/chungus/chungus-week-3-b.jpeg 'Chungus Week 3')
 
 Yeahhhh we’re doing multiple images now. I have too many ideas and I realized that 1 image was a completely arbitrary and unnecessary limitation I was putting on myself. You’re probably wondering what the hell is the point of the cereal bowl boxing one. Don’t worry, we’ll get to that...
 
