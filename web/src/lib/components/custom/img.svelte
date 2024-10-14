@@ -4,4 +4,4 @@
 </script>
 
 <!-- TODO: responsive sizing for the images in md -->
-<img {src} {alt} loading="lazy" style="width: 500px" />
+<img {src} {alt} loading="lazy" />
