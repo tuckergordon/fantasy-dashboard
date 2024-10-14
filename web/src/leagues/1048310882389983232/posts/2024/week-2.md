@@ -1,6 +1,6 @@
 ---
 title: Week 2
-date: '2024-9-19'
+date: '9/19/2024'
 published: true
 ---
 

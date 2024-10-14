@@ -1,6 +1,6 @@
 ---
 title: Week 3
-date: '2024-9-24'
+date: '9/24/2024'
 published: true
 ---
 

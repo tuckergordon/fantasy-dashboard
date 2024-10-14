@@ -1,6 +1,6 @@
 ---
 title: Week 4
-date: '2024-10-1'
+date: '10/1/2024'
 published: true
 ---
 
