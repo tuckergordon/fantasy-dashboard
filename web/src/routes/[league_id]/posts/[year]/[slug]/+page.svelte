@@ -13,7 +13,7 @@
 
 <article class="prose mx-auto p-4 pt-12 dark:prose-invert">
 	<hgroup>
-		<h1>{data.meta.title}</h1>
+		<!-- <h1>{data.meta.title}</h1> -->
 		<p class="italic">{formatDate(data.meta.date)}</p>
 	</hgroup>
 

@@ -4,9 +4,9 @@ date: '2024-9-19'
 published: true
 ---
 
-![An overweight bugs bunny lying on the couch watching football. He has a fever and there are tissues around him. 3d digital art](/images/chungus-week-2.jpeg 'Chungus Week 2')
-
 # Week 2 Recap
+
+![An overweight bugs bunny lying on the couch watching football. He has a fever and there are tissues around him. 3d digital art](/images/chungus-week-2.jpeg 'Chungus Week 2')
 
 Not much to say about Monday’s late night action, Danny really nailed it. I was indeed peacefully asleep and woke up to just wonderful news. I try to enjoy weeks like that because I also know all too well what it feels like to be on the other side, wanting to rip your hair out.
 

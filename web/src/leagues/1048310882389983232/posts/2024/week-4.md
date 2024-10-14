@@ -4,9 +4,10 @@ date: '2024-10-1'
 published: true
 ---
 
+# Week 4 Recap
+
 ![An overweight bugs bunny wearing a chiefs number 15 jersey looks on in horror at an ambulance. Another bugs bunny, this one wearing a chiefs number 4 jersey, has a cast on his leg and is being loaded into the ambulance. 3D digital art](/images/chungus-week-4.jpeg 'Chungus Week 4')
 
-# Week 4 Recap
 
 ## 🏆 Standings
 
@@ -34,8 +35,8 @@ published: true
 
 ### 🥣 Tudbert Bowl
 
-Herbert: 1
-Tolbert: 1
+- **Herbert**: 1
+- **Tolbert**: 1
 
 ## 🤝 Trade Review
 
