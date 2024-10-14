@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import Standings from '$lib/components/standings.svelte';
+	import Standings from '$lib/components/Standings.svelte';
 
 	export let data;
 	const { metadata, posts, standings } = data;
