@@ -21,7 +21,7 @@
 	</ul>
 </section> -->
 
-<section>
+<section class="prose mx-auto p-4 pt-12 dark:prose-invert">
 	<ul>
 		{#each data.leagues as league}
 			<li>
