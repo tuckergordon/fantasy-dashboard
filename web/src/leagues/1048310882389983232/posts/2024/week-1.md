@@ -1,12 +1,9 @@
 ---
-title: Week 1
+title: Week 1 Recap
 date: '9/12/2024'
 published: true
+image: '/images/chungus/chungus-week-1.jpeg'
 ---
-
-# Week 1 Recap
-
-![An overweight bugs bunny lying on the couch watching football. He has a fever and there are tissues around him. 3d digital art](/images/chungus-week-1.jpeg 'Chungus Week 1')
 
 Been a busy week! I’ve been wondering how I ever felt like I had time for writing these things and honestly was considering just not doing it this week or kinda phoning it in (which still might happen, I’m just starting out writing this thing). But the gods decided to punish me for even considering that annnddd I tested positive for Covid this morning. So I guess we might as well do this thing!
 

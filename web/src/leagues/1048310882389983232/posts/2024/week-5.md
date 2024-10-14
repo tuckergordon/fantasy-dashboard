@@ -1,12 +1,9 @@
 ---
-title: Week 5
+title: Week 5 Recap
 date: '10/8/2024'
 published: true
+image: '/images/chungus/chungus-week-5.jpeg'
 ---
-
-# Week 5 Recap
-
-![An waluigi wearing a ravens number 8 jersey. He has running shoes on and is holding trekking poles. He's standing in a wooded area at night in front of a finish line of a race. There's a banner above him that reads bubbas. 3d digital art](/images/chungus-week-5.jpeg 'Chungus Week 5')
 
 Some incredibly close matchups this week were decided by Monday night and they resulted in some pretty big shifts in the standings. For the first time since sometime last year (idk when, Joe can look it up), someone other than Julian is in first place! We also got some trades to review, a new team name, and an exciting update to everyone’s favorite new section! And shoutout to Danny for running for 43 miles, winning the stupid race, and not getting rabdo (if you don’t know what it is don’t look it up)!
 
