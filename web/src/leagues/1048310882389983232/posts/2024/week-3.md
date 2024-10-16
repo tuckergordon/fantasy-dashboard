@@ -3,6 +3,7 @@ title: Week 3 Recap
 date: '9/24/2024'
 published: true
 image: '/images/chungus/chungus-week-3-a.jpeg'
+week: 3
 ---
 
 <!-- Additional images should be placed inline like this -->

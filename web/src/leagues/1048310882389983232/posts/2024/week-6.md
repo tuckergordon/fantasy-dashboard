@@ -3,6 +3,7 @@ title: Week 6 Recap
 date: '10/15/2024'
 published: true
 image: '/images/chungus/chungus-week-6.jpeg'
+week: 6
 ---
 
 ## Author's note

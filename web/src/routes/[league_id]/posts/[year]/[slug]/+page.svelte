@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
+	import Matchups from '$lib/components/Matchups.svelte';
 
 	export let data;
 </script>
@@ -20,6 +21,11 @@
 			<img src={data.meta.image} alt="{data.meta.title} image" />
 		{/if}
 	</hgroup>
+
+	{#if data.matchupGroups}
+		<h2>Matchups</h2>
+		<Matchups matchupGroups={data.matchupGroups} />
+	{/if}
 
 	<div class="content">
 		<svelte:component this={data.content} />

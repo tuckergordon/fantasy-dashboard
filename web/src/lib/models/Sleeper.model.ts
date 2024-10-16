@@ -31,6 +31,15 @@ export interface LeagueSettings {}
 
 export interface LeagueScoringSettings {}
 
+export interface Matchup {
+	starters: string[];
+	roster_id: number;
+	players: string[];
+	matchup_id: number;
+	points: number;
+	custom_points: number | null;
+}
+
 export interface Roster {
 	starters: string[];
 	settings: RosterSettings;

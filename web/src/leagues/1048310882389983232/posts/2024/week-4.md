@@ -3,6 +3,7 @@ title: Week 4 Recap
 date: '10/1/2024'
 published: true
 image: '/images/chungus/chungus-week-4.jpeg'
+week: 4
 ---
 
 ## 🏆 Standings
