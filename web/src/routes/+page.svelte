@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { formatDate } from '$lib/utils';
+  // import { formatDate } from '$lib/utils';
 
-	export let data;
+  export let data;
 </script>
 
 <!-- <svelte:head>
@@ -22,13 +22,13 @@
 </section> -->
 
 <section class="prose mx-auto p-4 pt-12 dark:prose-invert">
-	<ul>
-		{#each data.leagues as league}
-			<li>
-				<a href={league.id}>{league.name}</a>
-			</li>
-		{/each}
-	</ul>
+  <ul>
+    {#each data.leagues as league}
+      <li>
+        <a href={league.id}>{league.name}</a>
+      </li>
+    {/each}
+  </ul>
 </section>
 
 <!-- <style>
