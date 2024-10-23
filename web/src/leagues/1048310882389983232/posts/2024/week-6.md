@@ -39,20 +39,21 @@ Now let's back to the usual content but in its new form!
 
 ## 🏆 Standings
 
-|     | Name                            | Record |
-| --- | ------------------------------- | ------ |
-| 1   | Steezy Nix (10-2)               | 10-2   |
-| 2   | Kastration Station (9-3)        | 9-3    |
-| 3   | Absolute Unitas (9-3)           | 9-3    |
-| 4   | Farkie’s Garden (9-3)           | 9-3    |
-| 5   | Bone’s Friggin Bonies (7-5)     | 7-5    |
-| 6   | Team Crams_Clams (5-7)          | 5-7    |
-| 7   | Team benstone099 (5-7)          | 5-7    |
-| 8   | Bye Baker We Miss You (5-7)     | 5-7    |
-| 9   | Mike Evans’s Brother (4-8)      | 4-8    |
-| 10  | The Lamarmy (4-8)               | 4-8    |
-| 11  | McConkey’s Bonked Up Boys (3-9) | 3-9    |
-| 12  | The Danny Pretzeler 🥨 (2-10)   | 2-10   |
+|     | Name                      | Record |
+| --- | ------------------------- | ------ |
+| 1   | Steezy Nix                | 10-2   |
+| 2   | Kastration Station        | 9-3    |
+| 3   | Absolute Unitas           | 9-3    |
+| 4   | Farkie’s Garden           | 9-3    |
+| 5   | Bone’s Friggin Bonies     | 7-5    |
+| 6   | Team Crams_Clams          | 5-7    |
+|     |                           |        |
+| 7   | Team benstone099          | 5-7    |
+| 8   | Bye Baker We Miss You     | 5-7    |
+| 9   | Mike Evans’s Brother      | 4-8    |
+| 10  | The Lamarmy               | 4-8    |
+| 11  | McConkey’s Bonked Up Boys | 3-9    |
+| 12  | The Danny Pretzeler 🥨    | 2-10   |
 
 ## 💩 Draft Lottery
 
