@@ -15,6 +15,7 @@
           <img
             src="https://sleepercdn.com/avatars/thumbs/{$page.data.league_avatar}"
             class="mr-2 inline h-10 rounded-full"
+            alt={$page.data.metadata.name}
           />
         {/if}
         {$page.data.metadata.name}
