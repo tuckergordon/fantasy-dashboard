@@ -208,7 +208,7 @@ fantasy owner to get production out of Kyle Pitts. Funny thing I learned today: 
 the 3rd most targets in the NFL and only the 3rd most yards on the Giants. Insane. Time to see what
 Drake Maye’s got (though wtf are the Patriots doing..)
 
-#### 12. McConke’s Bonked Up Boys (last week: 11)
+#### 12. McConkey’s Bonked Up Boys (last week: 11)
 
 Okay now that Jordan Mason is gone the Bonked Up Boys don’t look quite as real as they did (aside
 from Darius Slayton okayyy we see you). Andy Dalton didn’t have it this week but Caleb Williams
