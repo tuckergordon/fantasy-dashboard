@@ -1,18 +1,14 @@
 <script lang="ts">
   import Transition from '$lib/components/Transition.svelte';
-  import { AppShell } from '@skeletonlabs/skeleton';
   import '../styles/app.postcss';
   import Navbar from '$lib/components/Navbar.svelte';
 
   export let data;
 </script>
 
-<AppShell>
-  <svelte:fragment slot="header">
-    <Navbar />
-  </svelte:fragment>
-
+<div class="grid grid-rows-[auto_1fr_auto]">
+  <header class="sticky top-0 z-10"><Navbar /></header>
   <Transition url={data.url}>
     <slot />
   </Transition>
-</AppShell>
+</div>

@@ -1,5 +1,6 @@
 <script lang="ts">
   import { formatDate } from '$lib/utils';
+  import { tocCrawler } from '@skeletonlabs/skeleton';
 
   export let data;
 </script>
@@ -12,7 +13,7 @@
   <meta property="og:image" content={data.meta.image} />
 </svelte:head>
 
-<article class="prose mx-auto p-4 pt-12 dark:prose-invert">
+<article class="prose dark:prose-invert mx-auto">
   <hgroup>
     <h1>{data.meta.title}</h1>
     <p class="italic">{formatDate(data.meta.date)}</p>
@@ -21,7 +22,15 @@
     {/if}
   </hgroup>
 
-  <div class="content">
+  <div
+    class="content"
+    use:tocCrawler={{
+      mode: 'generate',
+      queryElements: 'h2',
+      // need IDs to be unique otherwise ToC won't update between pages
+      key: data.url,
+    }}
+  >
     <svelte:component this={data.content} />
   </div>
 </article>
