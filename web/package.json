@@ -9,7 +9,7 @@
     "test": "npm run test:integration && npm run test:unit",
     "check": "npm run check:svelte && npm run check:format && npm run check:lint",
     "check:format": "prettier --write .",
-    "check:lint": "prettier --check . && eslint .",
+    "check:lint": "eslint .",
     "check:svelte": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:svelte:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "test:integration": "playwright test",
