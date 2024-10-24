@@ -20,7 +20,7 @@
           class={classesActive(`${$blogUrl}/${post.slug}`)}
           style="white-space: pre-wrap"
         >
-          {post.title}
+          {post.title.replace(' Recap', '')}
         </a>
       </li>
     {/each}
