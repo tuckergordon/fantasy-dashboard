@@ -3,6 +3,14 @@
   import '../styles/app.postcss';
   import Navbar from '$lib/components/Navbar.svelte';
 
+  import { afterNavigate } from '$app/navigation';
+
+  // Workaround to ensure page goes back to the top when navigating
+  // between routes. More info: https://github.com/sveltejs/kit/issues/2733#issuecomment-1543863772
+  afterNavigate(() => {
+    document.body.scrollTo(0, 0);
+  });
+
   export let data;
 </script>
 
