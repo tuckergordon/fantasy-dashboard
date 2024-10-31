@@ -122,6 +122,19 @@ I wasn't the only one who lost a close one this week - Nick lost to joe by a mea
 
 #### 10. Mike Evans’s Brother (last week: 10)
 
-#### 11. McConkey’s Bonked Up Boys (last week: 11)
+We finally got a lineup adjustment from the elder Evans brother, but he still went 0-2 this week and falls to 4-12 on the season. Given his sizeable deficit in the standings and the talent of the teams ahead of him, I'm ready to declare this team done for the season. Don't see them making the playoffs at this point, there just isn't enough time to right the ship. Now the real question is if Brian will go into selling mode before the trade deadline or just hang on to these guys until next season. 
 
-#### 12. The Danny Pretzeler 🥨 (last week: 12)
+I think this is the most tiers I've ever put in one of these, which happens when you have 3 single-team tiers. Brian is 4-12 so I can't put him up in tier 5, but his roster is just so clearly better than these last two that I have to keep them in separate tiers. 
+
+### Tier 7
+
+#### 11. The Danny Pretzeler 🥨 (last week: 12)
+
+Aside from Drake Maye's concussion, a pretty good week for Joe who got some good production out of Trevor Lawrence and Kyle Pitts. Tbd on how the Diontae Johnson trade impacts Zay Flowers's value but Joe will get a nice boost with Joe Flacco becoming a starter again. Gotta figure Joe will be looking to trade a QB lest he become _too_ powerful.
+
+#### 12. McConkey’s Bonked Up Boys (last week: 11)
+
+This team's hero had his best game as a pro this week, going 6/6 with 111 yards and 2 TDs, which Max has gotta be feeling great about. Less inspiring was Caleb Williams - I feel like a lot has been made this season about how weak the Commanders's secondary is, and yet Caleb became yet another QB to struggle against them. Nice for Max that Mattison seems to be the dude in LV now, but less nice that Singletary has seemingly lost his spot to Tyrone Tracy. And finally, yay we finally got some LaPorta production! Good coaching by Max to bench him - he clearly needed to be sent a message and it seems that message has been received. Hopefully the start of good things to come. 
+
+
+
