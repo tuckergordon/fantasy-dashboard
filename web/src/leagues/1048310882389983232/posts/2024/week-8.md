@@ -86,27 +86,37 @@ Big week for Charlie who put up 156.06 and is absolutely rolling right now. Kupp
 
 ### Tier 3
 
-#### 3. Farkie’s Garden (last week: 3)
+#### 3. The Lamarmy (last week: 4)
 
-Tough week but the good news is that Puka Nacua is **back** and should give some new life to my lineup which has faded a bit in recent weeks. I'd certainly feel better about things if Daniel Jones weren't the one throwing to Nabers (though Maleek didn't really do DJ any favors with all his drops), but this is still a great group and a solid roster all around. I'll keep myself at 3 for another week.
+Danny continues his rise and moves up another tier. While he unfairly attacked my extremely gracious, thoughtful, well-written rankings of the past, I will take the high road and continue to rank reasonably. This week, that means moving him up to the three spot. His roster is looking strong top to bottom and he has depth on the bench that he didn't have a few weeks ago. He's still only at .500 so let's not get _too_ crazy here, but he has closed the gap between the teams in front of him considerably and I don't seem him slowing down.
 
-#### 4. The Lamarmy (last week: 4)
+#### 4. Farkie’s Garden (last week: 3)
 
-Danny
+Tough week but the good news is that Puka Nacua is **back** and should give some new life to my lineup which has faded a bit in recent weeks. I'd certainly feel better about things if Daniel Jones weren't the one throwing to Nabers (though Maleek didn't really do DJ any favors with all his drops), but this is still a great group and a solid roster all around.
 
 #### 5. Team Crams_Clams (last week: 5)
 
+One of the big questions coming into this week was how Baker would perform without his top two WRs and the answer was a strong 24.30 point performance that helped the Clams score a big time 148.84 points. Jonathan Taylor is healthy, Travis Kelce is getting stronger, and Jameis Winston is making a bad Deshaun Watson look even worse. Cam lost Diggs for the season this week which obviously sucks, though with Flacco taking over as the Colts's starter he can probably just plug in Pittman and not miss a beat. 
+
 ### Tier 4
 
-#### 6. Absolute Unitas (last week: 6)
+#### 6. Steezy Nix (last week: 7)
 
-#### 7. Steezy Nix (last week: 7)
+Sometimes fantasy does actually go the way you think it will and with Alex starting Tutu Atwell and Troy Franklin this week, things went about as you'd predict (though he did sneak the median!). As evidenced by his GC text, Alex is well aware that he needs some WR help to compete so I guess we can stay tuned there. Meanwhile, Bo Nix is having big games, Tua looked solid in his return, and Stafford looks brand new with Puka and Kupp back. There's _juuuust_ enough here that combined with the record, I think Alex makes the playoffs but I'm not sure he goes very deep. 
+
+#### 7. Absolute Unitas (last week: 6)
+
+Connor's tumbling a bit and drops down a tier because of it. I won't get on his case about starting Dowdle because realistically he didn't have any other options. He's done well this season so far thanks to strong QB and WR play, but the lack of RB production may finally be getting to him plus Love and BTJ may be hurt and Richardson just lost the starting job. On the plus side, Waddle, Downs, and even Elijah Moore should be better with their new QBs and Keon Coleman continues to paly well. Con could definitely still make a run, it's just not looking quite as rosy as it once did. 
 
 ### Tier 5
 
 #### 8. Team benstone099 (last week: 8)
 
+For as much as these rankings change week to week, these next 3 have kinda settled into their spots. Ben had a good week, bolstered by a resurgent Achane and good performances from Kittle and Rhamondre. He's lost Christian Kirk for the season though and with Amari Cooper banged up, he doesn't have much to offer in the WR department and he doesn't have the firepower at QB/RB that some of the teams above him do to make up for it. This might be the highwater mark for team benstone099.
+
 #### 9. Kyler X(box)Y (last week: 9)
+
+I wasn't the only one who lost a close one this week - Nick lost to joe by a measely 1.36 points and falls to 7-9. Hopefully Tyrone Tracy will be okay, because he's looked great and was getting more and more of the snaps. Xavier Legette is intruguing to watch with Diontae gone and that's kinda the perfect word to describe this roster overall: intruiging. Not necessarily good or bad, but definitely interesting to watch and see what happens!
 
 ### Tier 6
 
