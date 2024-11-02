@@ -10,11 +10,15 @@
   <!-- Placeholder for now just to keep trail elements on the right -->
   <svelte:fragment slot="lead">
     {#if $page.data?.metadata?.id}
-      <a href="/{$page.data.metadata.id}" class="font-bold" data-sveltekit-preload-data="hover">
+      <a
+        href="/{$page.data.metadata.id}"
+        class="flex items-center font-bold"
+        data-sveltekit-preload-data="hover"
+      >
         {#if $page.data?.league_avatar}
           <img
             src="https://sleepercdn.com/avatars/thumbs/{$page.data.league_avatar}"
-            class="mr-2 inline h-10 rounded-full"
+            class="mr-2 h-10 rounded-full"
             alt={$page.data.metadata.name}
           />
         {/if}
