@@ -1,13 +1,13 @@
 import type { Post } from '$lib/models/Post.model';
 import { json } from '@sveltejs/kit';
 
-async function getMetadata(league_id: string) {
+async function getMetadata(leagueId: string) {
   const paths = import.meta.glob('/src/leagues/*/meta.json', { eager: true });
 
   for (const path in paths) {
     const file = paths[path];
 
-    if (!path.includes(league_id)) continue;
+    if (!path.includes(leagueId)) continue;
 
     // Check for metadata
     if (file && typeof file === 'object' && 'default' in file) {
@@ -16,7 +16,7 @@ async function getMetadata(league_id: string) {
   }
 }
 
-async function getPosts(league_id: string) {
+async function getPosts(leagueId: string) {
   let posts: Post[] = [];
 
   const paths = import.meta.glob('/src/leagues/*/posts/*/*.md', { eager: true });
@@ -27,7 +27,7 @@ async function getPosts(league_id: string) {
 
     // Filter out other leagues. Can't use variables in the glob so have to do it
     // this way..
-    if (!path.includes(league_id)) continue;
+    if (!path.includes(leagueId)) continue;
 
     // Get the slug from the post
     const slug = path.split('/').at(-1)?.replace('.md', '');
@@ -50,7 +50,7 @@ async function getPosts(league_id: string) {
 }
 
 export async function GET({ params }) {
-  const metadata = await getMetadata(params.league_id);
-  const posts = await getPosts(params.league_id);
+  const metadata = await getMetadata(params.leagueId);
+  const posts = await getPosts(params.leagueId);
   return json({ metadata, posts });
 }
