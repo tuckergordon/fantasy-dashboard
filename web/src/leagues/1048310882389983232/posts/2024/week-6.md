@@ -5,7 +5,7 @@ published: true
 image: '/images/chungus/chungus-week-6.jpeg'
 ---
 
-## Author's note
+## ✍️ Author's note
 
 New format? New format! Welcome to the new home of these weekly recaps! I should acknowledge that
 building this website was very much of a case of solving a non-existent problem. My system of "write

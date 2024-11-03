@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width" />
     %sveltekit.head%
   </head>
-  <body data-sveltekit-preload-data="hover" data-theme="skeleton">
+  <!-- scroll-pt leaves space for navbar -->
+  <body data-sveltekit-preload-data="hover" data-theme="skeleton" class="scroll-pt-[100px]">
     <div style="display: contents">%sveltekit.body%</div>
   </body>
 </html>
