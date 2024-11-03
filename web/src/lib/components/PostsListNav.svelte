@@ -17,8 +17,7 @@
         <a
           href="{$blogUrl}/{post.slug}"
           class="{classesActive(`${$blogUrl}/${post.slug}`)} no-underline"
-          style="white-space: pre-wrap"
-        >
+          style="white-space: pre-wrap">
           {post.title.replace(' Recap', '')}
         </a>
       </li>

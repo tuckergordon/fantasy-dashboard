@@ -23,8 +23,7 @@
       <!-- popup button -->
       <button
         class="btn hover:variant-soft-primary lg:hidden"
-        use:popup={{ event: 'click', target: 'features' }}
-      >
+        use:popup={{ event: 'click', target: 'features' }}>
         <span>Other Weeks</span>
         <Icon icon="material-symbols:keyboard-arrow-down" />
       </button>
@@ -46,8 +45,7 @@
       queryElements: 'h2',
       // need IDs to be unique otherwise ToC won't update between pages
       key: $page.url.pathname,
-    }}
-  >
+    }}>
     <svelte:component this={data.content} />
   </div>
 </article>

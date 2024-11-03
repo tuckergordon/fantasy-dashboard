@@ -13,14 +13,12 @@
       <a
         href="/{$page.data.metadata.id}"
         class="flex items-center font-bold"
-        data-sveltekit-preload-data="hover"
-      >
+        data-sveltekit-preload-data="hover">
         {#if $page.data?.league_avatar}
           <img
             src="https://sleepercdn.com/avatars/thumbs/{$page.data.league_avatar}"
             class="mr-2 h-10 rounded-full"
-            alt={$page.data.metadata.name}
-          />
+            alt={$page.data.metadata.name} />
         {/if}
         {$page.data.metadata.name}
       </a>
@@ -31,8 +29,7 @@
       class="btn-icon !mx-0 hover:variant-soft-surface hover:text-on-primary-token"
       href="https://github.com/tuckergordon/fantasy-dashboard"
       target="_blank"
-      rel="noreferrer"
-    >
+      rel="noreferrer">
       <Icon icon="fa-brands:github" />
     </a>
     <LightSwitch rounded="rounded-full" />

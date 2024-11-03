@@ -182,11 +182,12 @@ definitely interesting to watch and see what happens!
 
 #### 10. Mike Evans’s Brother (last week: 10)
 
-We finally got a lineup adjustment from the younger Evans brother, but he still went 0-2 this week and
-falls to 4-12 on the season. Given his sizeable deficit in the standings and the talent of the teams
-ahead of him, I'm ready to declare this team done for the season. Don't see them making the playoffs
-at this point, there just isn't enough time to right the ship. Now the real question is if Brian
-will go into selling mode before the trade deadline or just hang on to these guys until next season.
+We finally got a lineup adjustment from the younger Evans brother, but he still went 0-2 this week
+and falls to 4-12 on the season. Given his sizeable deficit in the standings and the talent of the
+teams ahead of him, I'm ready to declare this team done for the season. Don't see them making the
+playoffs at this point, there just isn't enough time to right the ship. Now the real question is if
+Brian will go into selling mode before the trade deadline or just hang on to these guys until next
+season.
 
 I think this is the most tiers I've ever put in one of these, which happens when you have 3
 single-team tiers. Brian is 4-12 so I can't put him up in tier 5, but his roster is just so clearly
