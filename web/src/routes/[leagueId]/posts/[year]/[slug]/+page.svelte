@@ -5,7 +5,7 @@
   import Icon from '@iconify/svelte';
   import { tocCrawler, popup } from '@skeletonlabs/skeleton';
 
-  export let data;
+  let { data } = $props();
 </script>
 
 <!-- SEO -->
@@ -46,6 +46,6 @@
       // need IDs to be unique otherwise ToC won't update between pages
       key: $page.url.pathname,
     }}>
-    <svelte:component this={data.content} />
+    <data.content />
   </div>
 </article>

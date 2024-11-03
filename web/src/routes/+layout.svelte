@@ -6,6 +6,9 @@
 
   import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
   import { storePopup } from '@skeletonlabs/skeleton';
+  import type { Snippet } from 'svelte';
+
+  let { children }: { children?: Snippet } = $props();
   storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
   // Workaround to ensure page goes back to the top when navigating
@@ -17,5 +20,5 @@
 
 <div class="grid grid-rows-[auto_1fr_auto]">
   <header class="sticky top-0 z-10"><Navbar /></header>
-  <slot />
+  {@render children?.()}
 </div>
