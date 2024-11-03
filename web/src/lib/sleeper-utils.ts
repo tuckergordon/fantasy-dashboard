@@ -3,17 +3,17 @@ import type { Roster, User } from './models/Sleeper.model';
 export async function getStandings(
   // The Svelte `fetch` function for better performance than window.fetch()
   fetch: (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>,
-  league_id: string,
+  leagueId: string,
   // TODO: allow getting standings as of a specific week once we have week by week point totals
   // week?: number,
 ): Promise<Roster[]> {
-  const usersResponse = await fetch(`https://api.sleeper.app/v1/league/${league_id}/users`);
+  const usersResponse = await fetch(`https://api.sleeper.app/v1/league/${leagueId}/users`);
   const users = (await usersResponse.json()) as User[];
 
   const teamNameMap = {} as { [user_id: string]: User };
   users.forEach((user) => (teamNameMap[user.user_id] = user));
 
-  const rostersResponse = await fetch(`https://api.sleeper.app/v1/league/${league_id}/rosters`);
+  const rostersResponse = await fetch(`https://api.sleeper.app/v1/league/${leagueId}/rosters`);
   const rosters = (await rostersResponse.json()) as Roster[];
 
   const standings = rosters
