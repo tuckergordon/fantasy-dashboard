@@ -28,7 +28,7 @@
   </svelte:fragment>
   <svelte:fragment slot="trail">
     <a
-      class="btn-icon hover:variant-soft-surface hover:text-on-primary-token !mx-0"
+      class="btn-icon !mx-0 hover:variant-soft-surface hover:text-on-primary-token"
       href="https://github.com/tuckergordon/fantasy-dashboard"
       target="_blank"
       rel="noreferrer"

@@ -13,8 +13,6 @@
   afterNavigate(() => {
     document.body.scrollTo(0, 0);
   });
-
-  export let data;
 </script>
 
 <div class="grid grid-rows-[auto_1fr_auto]">

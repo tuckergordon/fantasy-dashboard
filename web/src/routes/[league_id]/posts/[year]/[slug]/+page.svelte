@@ -16,7 +16,7 @@
   <meta property="og:image" content={data.meta.image} />
 </svelte:head>
 
-<article class="prose dark:prose-invert mx-auto">
+<article class="prose mx-auto dark:prose-invert">
   <hgroup>
     <div class="flex items-center justify-between">
       <span class="shrink-0 italic">{formatDate(data.meta.date)}</span>
