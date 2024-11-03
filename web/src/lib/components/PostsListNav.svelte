@@ -3,7 +3,8 @@
   import { derived } from 'svelte/store';
 
   const blogUrl = derived(page, ($page) => $page.url.pathname.split('/').slice(0, -1).join('/'));
-  $: classesActive = (href: string) =>
+
+  let classesActive = (href: string) =>
     href === $page.url.pathname
       ? 'bg-primary-500 text-on-primary-token hover:text-primary-500'
       : '';

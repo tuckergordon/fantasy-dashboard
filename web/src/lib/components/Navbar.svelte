@@ -8,7 +8,7 @@
 
 <AppBar background="bg-primary-500 dark:bg-surface-800 text-on-surface-token">
   <!-- Placeholder for now just to keep trail elements on the right -->
-  <svelte:fragment slot="lead">
+  {#snippet lead()}
     {#if $page.data?.metadata?.id}
       <a
         href="/{$page.data.metadata.id}"
@@ -23,8 +23,9 @@
         {$page.data.metadata.name}
       </a>
     {/if}
-  </svelte:fragment>
-  <svelte:fragment slot="trail">
+  {/snippet}
+
+  {#snippet trail()}
     <a
       class="btn-icon !mx-0 hover:variant-soft-surface hover:text-on-primary-token"
       href="https://github.com/tuckergordon/fantasy-dashboard"
@@ -33,5 +34,5 @@
       <Icon icon="fa-brands:github" />
     </a>
     <LightSwitch rounded="rounded-full" />
-  </svelte:fragment>
+  {/snippet}
 </AppBar>

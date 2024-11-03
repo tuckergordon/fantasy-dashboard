@@ -1,5 +1,7 @@
 <script lang="ts">
-  export let standings;
+  import type { Roster } from '$lib/models/Sleeper.model';
+
+  let { standings }: { standings: (Roster & { name: string })[] } = $props();
 </script>
 
 <ol>

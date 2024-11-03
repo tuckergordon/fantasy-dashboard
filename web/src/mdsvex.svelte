@@ -1,6 +1,11 @@
-<script lang="ts" context="module">
-  import { img } from '$lib/components/custom';
-  export { img };
+<script lang="ts" module>
+  export { img } from '$lib/components/custom';
 </script>
 
-<slot />
+<script lang="ts">
+  import type { Snippet } from 'svelte';
+
+  let { children }: { children: Snippet } = $props();
+</script>
+
+{@render children?.()}

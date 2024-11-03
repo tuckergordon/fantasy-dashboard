@@ -2,7 +2,7 @@
   import { page } from '$app/stores';
   import Standings from '$lib/components/Standings.svelte';
 
-  export let data;
+  let { data } = $props();
   const { metadata, posts, standings } = data;
 </script>
 

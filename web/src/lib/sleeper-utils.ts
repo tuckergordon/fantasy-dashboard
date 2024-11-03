@@ -6,7 +6,7 @@ export async function getStandings(
   leagueId: string,
   // TODO: allow getting standings as of a specific week once we have week by week point totals
   // week?: number,
-): Promise<Roster[]> {
+) {
   const usersResponse = await fetch(`https://api.sleeper.app/v1/league/${leagueId}/users`);
   const users = (await usersResponse.json()) as User[];
 
