@@ -120,6 +120,31 @@ applying for Medicare.
 - Tucker's 2025 1st
 - Danny's 2026 1st
 
+_Written by Charlie_
+
+The tank is (officially) on for Brian! At 4-14 through 9 weeks, due to a combination of neglect,
+underperformance from his stars, and some really unfortunate matchup luck, Brian trades away Breece
+to a rising contender in Tucker in exchange for two 1sts and a Will Shipley sweetener (I guess?).
+
+This trade obviously makes sense for both sides. Tucker is deeply hungry for depth at the running
+back position and for star players who can score points NOW as he fights with 3 other teams at 10-8
+with higher PF than his team. Breece allows Tucker to play the start/sit minigame more effectively
+than before and play around with his roster week-to-week with more flexibility than he was
+previously able to, and also provides youthful insurance against a potential Joe Mixon regression or
+JK Dobbins injury recurrence in future seasons. All in all, this is fair value with clear
+motivation. As someone who has historically slammed trades to go all-in on a season only to finish
+in 7th place both times, I can safely say that it is way more fun to watch someone else do it.
+Godspeed, Tucker!
+
+For Brian, the tank is on. Just an unfortunate string of things led to this juggernaut from previous
+years to fall from grace and fall hard. Clearly, getting back two 1st round picks to be able to
+start to build up a new, young roster is a top priority. However, I wonder whether selling older
+pieces like Nuk or Tyreek, or at least leveraging them in multi-team trades while also dealing
+Breece for greater returns, may have netted more draft capital for Brian when the dust settled. A
+fine trade, but I can’t help but feel similar to my Lamar trade – more value left out on the table
+when someone with high demand for a specific position came a callin’. If if’s and but’s was candies
+and nuts, we’d all have a Merry Christmas.
+
 ## 🧠 Power Rankings
 
 ### Tier 1
