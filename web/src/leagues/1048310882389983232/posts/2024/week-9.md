@@ -25,6 +25,11 @@ you'll see a little "Other weeks" dropdown that you can use to get to previous w
 your computer, you'll get the same info on a left sidenav and then also a fun table of contents on
 the right side.
 
+There's now a little edit button at 
+the bottom of the post, which is
+mostly just helpful for me to fix
+typos after I've alreasy posted. 
+
 I also made a change that nobody else will care about and upgraded the site from Svelte 4 to Svelte
 5, which gives me lots of new tasty code features to play with.
 
@@ -50,13 +55,14 @@ More features to come! I'm also still looking to rebrand this site so if you hav
 
 ## 💩 Draft Lottery
 
-|     | Name             | Max PF  |
-| --- | ---------------- | ------- |
-| 2   | Tucker (via Max) | 940.68  |
-| 1   | Joe              | 948.16  |
-| 5   | Nick             | 1131.94 |
-| 4   | Nick (via Cam)   | 1150.04 |
-| 6   | Tucker           | 1198.46 |
+|     | Name               | Max PF  |
+| --- | ------------------ | ------- |
+| 1   | Tucker (via Max)   | 940.68  |
+| 2   | Joe                | 948.16  |
+| 3   | Nick               | 1131.94 |
+| 4   | Nick (via Cam)     | 1150.04 |
+| 5   | Brian (via Tucker) | 1198.46 |
+| 6   | Brian              | 1206.86 |
 
 ## 🥣 Tudbert Bowl
 
