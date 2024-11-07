@@ -15,6 +15,21 @@ I'm sick of it. Sick of it I tell ya! The first two aren't going to change any t
 looking for my garden boys to right the ship real soon. I decided to take matters into my own hands
 a bit and make a couple trades! More on those in a bit..
 
+## ✨ New features
+
+Not a section that we'll have all the time but figured I'd call out some new things I added to the
+site recently.
+
+You may have already noticed but there are now navigation elements!If you're viewing on the phone,
+you'll see a little "Other weeks" dropdown that you can use to get to previous weeks. If you're on
+your computer, you'll get the same info on a left sidenav and then also a fun table of contents on
+the right side.
+
+I also made a change that nobody else will care about and upgraded the site from Svelte 4 to Svelte
+5, which gives me lots of new tasty code features to play with.
+
+More features to come! I'm also still looking to rebrand this site so if you have any ideas lmk!
+
 ## 🏆 Standings
 
 |     | Name                      | Record |
