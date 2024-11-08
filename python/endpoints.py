@@ -1,5 +1,5 @@
-import numpy as np
 import pandas as pd
+import sqlite3
 
 def points_for(con,week_until):
     # TODO: add functions for actual league and week selection
@@ -61,12 +61,15 @@ def max_points_for(con,team_name,week):
     return max_pf
 
 
-def get_schedule(con, week_until):
+def get_schedule(week_until, to_json=True):
+    con = sqlite3.connect('./fantasy_dashboard.db')
+
     mpf = []
 
     ms = pd.read_sql('select t1.name,t2.name as opponent_name,team_points,opponent_points, week from matchups \
-                        join teams as t1 on matchups.team_id=t1.roster_id and t1.league_id=matchups.league_id \
-                        join teams as t2 on matchups.opponent_id=t2.roster_id and t2.league_id=matchups.league_id',con)
+                    join teams as t1 on matchups.team_id=t1.roster_id and t1.league_id=matchups.league_id \
+                    join teams as t2 on matchups.opponent_id=t2.roster_id and t2.league_id=matchups.league_id \
+                    and week<=?',con,params=[week_until])
 
     df = ms.groupby('name').sum('opponent_points')
 
@@ -75,8 +78,8 @@ def get_schedule(con, week_until):
         
         p = 0
 
-        for week in range(1,10):
-            p+=endpoints.max_points_for(con,n,week)
+        for week in range(1,week_until+1):
+            p+=max_points_for(con,n,week)
         
         mpf.append(p)
 
@@ -84,5 +87,11 @@ def get_schedule(con, week_until):
 
     df = df[['team_points','opponent_points','max_pf']]
     df = df.rename(columns={'team_points':'pf','opponent_points':'pa'})
-    return df.to_json()
+
+    con.close()
+    
+    if to_json:
+        return df.to_json()
+    else:
+        return df
 
