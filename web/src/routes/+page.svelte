@@ -3,12 +3,7 @@
 
   let { data } = $props();
 
-	onMount(() => {
-
-		// fetch('https://python-hello-world-nu-lilac.vercel.app/api/').then(res => {
-		// 	res.json().then(text => console.log(text));
-		// })
-	})
+	console.log(data.hello);
 </script>
 
 <!-- <svelte:head>
