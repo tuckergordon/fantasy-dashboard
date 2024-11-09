@@ -5,9 +5,9 @@ export async function load({ fetch }) {
   // const hello = await helloResponse.text();
   // console.log(hello);
 
-  // fetch('https://python-hello-world-nu-lilac.vercel.app/api/').then(res => {
-  //   res.json().then(text => console.log(text));
-  // })
+  fetch('https://python-hello-world-nu-lilac.vercel.app/api/').then(res => {
+    res.json().then(text => console.log(text));
+  })
 
   const leagues = await response.json();
   return { leagues };

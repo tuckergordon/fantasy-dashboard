@@ -5,9 +5,9 @@
 
 	onMount(() => {
 
-		fetch('https://python-hello-world-nu-lilac.vercel.app/api/').then(res => {
-			res.json().then(text => console.log(text));
-		})
+		// fetch('https://python-hello-world-nu-lilac.vercel.app/api/').then(res => {
+		// 	res.json().then(text => console.log(text));
+		// })
 	})
 </script>
 
