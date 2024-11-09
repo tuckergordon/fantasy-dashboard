@@ -1,5 +1,14 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   let { data } = $props();
+
+	onMount(() => {
+
+		fetch('https://python-hello-world-nu-lilac.vercel.app/api/').then(res => {
+			res.json().then(text => console.log(text));
+		})
+	})
 </script>
 
 <!-- <svelte:head>
