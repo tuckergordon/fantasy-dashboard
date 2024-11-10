@@ -1,7 +1,8 @@
 <script lang="ts">
   let { data } = $props();
 
-  console.log(data.hello);
+  console.log('Python API:');
+  console.log(JSON.stringify(data.pythonTestMsg, null, 2));
 </script>
 
 <svelte:head>

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run dev:vite\" \"npm run dev:fastapi\"",
-    "dev:fastapi": "PYTHONPATH=../python uvicorn api.index:app --reload",
+    "dev:fastapi": "cd ../python && uvicorn api.index:app --reload",
     "dev:vite": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
