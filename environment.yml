@@ -1,0 +1,9 @@
+name: fantasy-dashboard
+channels: 
+  - conda-forge
+  - defaults
+dependencies:
+  - nodejs=22.9
+  - python=3.11
+  - fastapi=0.115
+  - uvicorn-standard=0.32
