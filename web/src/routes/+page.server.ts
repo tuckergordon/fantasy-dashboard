@@ -9,6 +9,9 @@ export async function load({ fetch }) {
   const pythonTestResponse = await fetch(pythonApiUrl);
   const pythonTestMsg = await pythonTestResponse.json();
 
+  const dbTestResponse = await fetch(pythonApiUrl + 'db-test');
+  const dbTest = await dbTestResponse.json();
+
   const leagues = await response.json();
-  return { leagues, pythonTestMsg };
+  return { leagues, pythonTestMsg, dbTest };
 }

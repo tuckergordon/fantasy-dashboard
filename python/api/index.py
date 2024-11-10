@@ -1,5 +1,11 @@
-from fastapi import FastAPI
+import os
+from supabase import create_client, Client
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+
+url: str = os.environ.get("SUPABASE_URL")
+key: str = os.environ.get("SUPABASE_ANON_KEY")
+supabase: Client = create_client(url, key)
 
 app = FastAPI()
 
@@ -32,3 +38,7 @@ app.add_middleware(
 @app.get("/api/")
 def hello_fast_api():
     return {"message": "Hello from FastAPI"}
+
+@app.get("/api/db-test")
+def test_supabase():
+    return supabase.table("todos").select("*").execute()

@@ -3,6 +3,9 @@
 
   console.log('Python API:');
   console.log(JSON.stringify(data.pythonTestMsg, null, 2));
+
+  console.log('Database response (via python):');
+  console.log(JSON.stringify(data.dbTest, null, 2));
 </script>
 
 <svelte:head>
