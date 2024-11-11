@@ -28,7 +28,7 @@
   {#snippet trail()}
     <a
       class="btn-icon !mx-0 hover:variant-soft-surface hover:text-on-primary-token"
-      href="https://github.com/tuckergordon/fantasy-dashboard"
+      href="https://github.com/tuckergordon/mmish"
       target="_blank"
       rel="noreferrer">
       <Icon icon="fa-brands:github" />

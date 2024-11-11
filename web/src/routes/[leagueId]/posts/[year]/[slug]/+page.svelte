@@ -50,8 +50,7 @@
   </div>
 
   <a
-    href="https://github.com/tuckergordon/fantasy-dashboard/blob/main/web/src/leagues{$page.url
-      .pathname}.md"
+    href="https://github.com/tuckergordon/mmish/blob/main/web/src/leagues{$page.url.pathname}.md"
     class="btn p-0 text-primary-500 no-underline hover:underline">
     <Icon icon="material-symbols:edit" />
     <span>Edit this page</span>
