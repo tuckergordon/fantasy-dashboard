@@ -1,3 +1,4 @@
+import { mmishTheme } from './src/styles/theme';
 import { skeleton } from '@skeletonlabs/tw-plugin';
 import typography from '@tailwindcss/typography';
 import { join } from 'path';
@@ -16,12 +17,7 @@ export default {
     typography,
     skeleton({
       themes: {
-        preset: [
-          {
-            name: 'skeleton',
-            enhancements: true,
-          },
-        ],
+        custom: [mmishTheme],
       },
     }),
   ],

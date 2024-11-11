@@ -1,6 +1,13 @@
-# 'mmish
+<p align="center">
+  <img src="web/static/images/mmish.png" height="96">
+  <h1 align="center">'mmish</h3>
+</p>
 
+<p align="center">
 A website for fantasy football leagues to view recaps, statistics, and other league-specific content.
+</p>
+
+<br />
 
 ## Getting Started
 

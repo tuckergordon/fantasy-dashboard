@@ -6,20 +6,21 @@
   import { page } from '$app/stores';
 </script>
 
-<AppBar background="bg-primary-500 dark:bg-surface-800 text-on-surface-token">
+<AppBar background="bg-primary-600 dark:bg-surface-500 text-surface">
   <!-- Placeholder for now just to keep trail elements on the right -->
   {#snippet lead()}
+    <a
+      href="/"
+      class="mr-6 flex shrink-0 items-center font-bold italic"
+      data-sveltekit-preload-data="hover">
+      <img src="/images/mmish.png" class="mr-2 h-10 rounded-full" alt="'mmish" />
+      'mmish
+    </a>
     {#if $page.data?.metadata?.id}
       <a
         href="/{$page.data.metadata.id}"
-        class="flex items-center font-bold"
+        class="border-l border-current pl-6"
         data-sveltekit-preload-data="hover">
-        {#if $page.data?.league_avatar}
-          <img
-            src="https://sleepercdn.com/avatars/thumbs/{$page.data.league_avatar}"
-            class="mr-2 h-10 rounded-full"
-            alt={$page.data.metadata.name} />
-        {/if}
         {$page.data.metadata.name}
       </a>
     {/if}
