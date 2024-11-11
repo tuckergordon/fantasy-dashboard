@@ -25,10 +25,8 @@ you'll see a little "Other weeks" dropdown that you can use to get to previous w
 your computer, you'll get the same info on a left sidenav and then also a fun table of contents on
 the right side.
 
-There's now a little edit button at 
-the bottom of the post, which is
-mostly just helpful for me to fix
-typos after I've alreasy posted. 
+There's now a little edit button at the bottom of the post, which is mostly just helpful for me to
+fix typos after I've alreasy posted.
 
 I also made a change that nobody else will care about and upgraded the site from Svelte 4 to Svelte
 5, which gives me lots of new tasty code features to play with.
