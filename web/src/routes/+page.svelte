@@ -12,9 +12,9 @@
   <title>'mmish</title>
 </svelte:head>
 
-<section class="prose dark:prose-invert mx-auto mt-24 max-w-md text-center">
+<section class="prose mx-auto mt-24 max-w-md text-center dark:prose-invert">
   <img src="images/mmish.png" class="mx-auto" alt="'mmish logo" />
-  <h1>Welcome to <span class="text-secondary-500 dark:text-primary-500 italic">'mmish</span></h1>
+  <h1>Welcome to <span class="italic text-secondary-500 dark:text-primary-500">'mmish</span></h1>
   <p>Your home for league-specific content and stats, created by your 'mmish and friends.</p>
 </section>
 
@@ -31,7 +31,7 @@
 	</ul>
 </section> -->
 
-<section class="prose dark:prose-invert mx-auto p-4 pt-12">
+<section class="prose mx-auto p-4 pt-12 dark:prose-invert">
   <h2 class="text-center">Leagues</h2>
   <ul>
     {#each data.leagues as league}
