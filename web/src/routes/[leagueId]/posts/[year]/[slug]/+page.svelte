@@ -8,7 +8,7 @@
   let { data } = $props();
 </script>
 
-<article class="prose dark:prose-invert mx-auto mb-8">
+<article class="prose mx-auto mb-8 dark:prose-invert">
   <hgroup>
     <div class="flex items-center justify-between">
       <span class="shrink-0 italic">{formatDate(data.meta.date)}</span>
@@ -43,7 +43,7 @@
 
   <a
     href="https://github.com/tuckergordon/mmish/blob/main/web/src/leagues{$page.url.pathname}.md"
-    class="btn text-primary-500 p-0 no-underline hover:underline">
+    class="btn p-0 text-primary-500 no-underline hover:underline">
     <Icon icon="material-symbols:edit" />
     <span>Edit this page</span>
   </a>

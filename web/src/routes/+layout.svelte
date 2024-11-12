@@ -6,10 +6,8 @@
 
   import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
   import { storePopup } from '@skeletonlabs/skeleton';
-  import type { Snippet } from 'svelte';
-  let { data } = $props();
 
-  let { children }: { children?: Snippet } = $props();
+  let { children, data } = $props();
   storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
   // Workaround to ensure page goes back to the top when navigating
