@@ -11,10 +11,10 @@
   {#snippet lead()}
     <a
       href="/"
-      class="mr-6 flex shrink-0 items-center font-bold italic"
+      class="mr-4 flex shrink-0 items-center font-bold italic"
       data-sveltekit-preload-data="hover">
-      <img src="/images/mmish.png" class="mr-2 h-10 rounded-full" alt="'mmish" />
-      'mmish
+      <img src="/images/mmish.png" class="h-10 rounded-full" alt="'mmish" />
+      <span class="mx-2 hidden sm:inline">'mmish</span>
     </a>
     {#if $page.data?.metadata?.id}
       <a
@@ -28,7 +28,7 @@
 
   {#snippet trail()}
     <a
-      class="btn-icon !mx-0 hover:variant-soft-surface hover:text-on-primary-token"
+      class="btn-icon hover:variant-soft-surface hover:text-on-primary-token !mx-0"
       href="https://github.com/tuckergordon/mmish"
       target="_blank"
       rel="noreferrer">
