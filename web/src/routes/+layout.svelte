@@ -7,6 +7,7 @@
   import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
   import { storePopup } from '@skeletonlabs/skeleton';
   import type { Snippet } from 'svelte';
+  let { data } = $props();
 
   let { children }: { children?: Snippet } = $props();
   storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
@@ -17,6 +18,15 @@
     document.body.scrollTo(0, 0);
   });
 </script>
+
+<svelte:head>
+  <title>{data.meta.title}</title>
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content={data.meta.title} />
+  <meta property="og:image" content={data.meta.image} />
+  <meta property="og:description" content={data.meta.description} />
+  <meta property="og:site_name" content={data.meta.site_name} />
+</svelte:head>
 
 <div class="grid grid-rows-[auto_1fr_auto]">
   <header class="sticky top-0 z-10"><Navbar /></header>
