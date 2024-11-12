@@ -1,4 +1,4 @@
-name: fantasy-dashboard
+name: mmish
 channels: 
   - conda-forge
   - defaults
