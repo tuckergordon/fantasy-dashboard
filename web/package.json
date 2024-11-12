@@ -7,7 +7,7 @@
     "dev:fastapi": "cd ../python && uvicorn api.index:app --reload",
     "dev:vite": "vite dev",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "concurrently \"vite preview\" \"npm run dev:fastapi\"",
     "check": "npm run check:svelte && npm run check:format && npm run check:lint",
     "check:format": "prettier --write .",
     "check:lint": "eslint .",
