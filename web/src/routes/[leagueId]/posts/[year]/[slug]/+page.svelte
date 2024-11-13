@@ -6,20 +6,22 @@
   import { tocCrawler, popup } from '@skeletonlabs/skeleton';
 
   let { data } = $props();
+  console.log(data);
 </script>
 
 <!-- SEO -->
 <svelte:head>
-  <title>{data.meta.title}</title>
+  <title>{data.post.title}</title>
   <meta property="og:type" content="article" />
-  <meta property="og:title" content={data.meta.title} />
-  <meta property="og:image" content={data.meta.image} />
+  <meta property="og:title" content={data.post.title} />
+  <meta property="og:image" content={data.post.image} />
 </svelte:head>
 
-<article class="prose mx-auto mb-8 dark:prose-invert">
+<article class="prose dark:prose-invert mx-auto mb-8">
   <hgroup>
     <div class="flex items-center justify-between">
-      <span class="shrink-0 italic">{formatDate(data.meta.date)}</span>
+      <span class="shrink-0 italic">{formatDate(data.post.createdAt)}</span>
+      <!-- TODO: add updatedAt? -->
       <!-- popup button -->
       <button
         class="btn hover:variant-soft-primary lg:hidden"
@@ -32,9 +34,9 @@
         <PostsListNav />
       </div>
     </div>
-    <h1>{data.meta.title}</h1>
-    {#if data.meta.image}
-      <img src={data.meta.image} alt="{data.meta.title} image" />
+    <h1>{data.post.title}</h1>
+    {#if data.post.image}
+      <img src={data.post.image} alt="{data.post.title} image" />
     {/if}
   </hgroup>
 
@@ -46,13 +48,14 @@
       // need IDs to be unique otherwise ToC won't update between pages
       key: $page.url.pathname,
     }}>
-    <data.content />
+    {@html data.post.content}
   </div>
 
-  <a
+  <!-- TODO: add a link that takes you to edit page on contentful -->
+  <!-- <a
     href="https://github.com/tuckergordon/mmish/blob/main/web/src/leagues{$page.url.pathname}.md"
-    class="btn p-0 text-primary-500 no-underline hover:underline">
+    class="btn text-primary-500 p-0 no-underline hover:underline">
     <Icon icon="material-symbols:edit" />
     <span>Edit this page</span>
-  </a>
+  </a> -->
 </article>

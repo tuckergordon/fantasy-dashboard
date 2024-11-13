@@ -3,18 +3,18 @@
   import Standings from '$lib/components/Standings.svelte';
 
   let { data } = $props();
-  const { metadata, posts, standings } = data;
+  const { leagueMetadata, posts, standings } = data;
 </script>
 
-<div class="prose mx-auto p-4 pt-12 dark:prose-invert">
+<div class="prose dark:prose-invert mx-auto p-4 pt-12">
   <section>
-    {#if $page.data?.league_avatar}
+    {#if $page.data?.leagueAvatar}
       <img
-        src="https://sleepercdn.com/avatars/{$page.data.league_avatar}"
+        src="https://sleepercdn.com/avatars/{$page.data.leagueAvatar}"
         class="mx-auto h-64 rounded-full"
-        alt={$page.data.metadata.name} />
+        alt={$page.data.leagueMetadata.name} />
     {/if}
-    <h1>{metadata.name}</h1>
+    <h1>{leagueMetadata.name}</h1>
   </section>
 
   <section class="justify-between md:flex">
@@ -28,7 +28,9 @@
       {#each posts as post}
         <li class="post">
           <!-- TODO: don't hard code year -->
-          <a href="{$page.url.pathname}/posts/2024/{post.slug}" class="title">{post.title}</a>
+          <a href="{$page.url.pathname}/posts/2024/{post.fields.slug}" class="title">
+            {post.fields.title}
+          </a>
         </li>
       {/each}
     </ul>

@@ -1,5 +1,5 @@
-import type { Post } from '$lib/models/Post.model';
-import { json } from '@sveltejs/kit';
+import { error, json } from '@sveltejs/kit';
+import { createClient } from 'contentful';
 
 async function getMetadata(leagueId: string) {
   const paths = import.meta.glob('/src/leagues/*/meta.json', { eager: true });
@@ -17,40 +17,25 @@ async function getMetadata(leagueId: string) {
 }
 
 async function getPosts(leagueId: string) {
-  let posts: Post[] = [];
+  const client = createClient({
+    // This is the space ID. A space is like a project folder in Contentful terms
+    space: import.meta.env.VITE_CONTENTFUL_SPACE,
+    // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+    accessToken: import.meta.env.VITE_CONTENTFUL_CLIENT_ACCESS_TOKEN,
+  });
 
-  const paths = import.meta.glob('/src/leagues/*/posts/*/*.md', { eager: true });
+  let data = await client
+    .getEntries({ content_type: 'recap', 'fields.leagueId': leagueId })
+    .catch((e) => {
+      console.error(e);
+      throw error(500, 'Problem retrieving blog posts');
+    });
 
-  // console.log(paths);
-  for (const path in paths) {
-    const file = paths[path];
-
-    // Filter out other leagues. Can't use variables in the glob so have to do it
-    // this way..
-    if (!path.includes(leagueId)) continue;
-
-    // Get the slug from the post
-    const slug = path.split('/').at(-1)?.replace('.md', '');
-
-    // Check for metadata
-    if (file && typeof file === 'object' && 'metadata' in file && slug) {
-      const metadata = file.metadata as Omit<Post, 'slug'>;
-      const post = { ...metadata, slug } satisfies Post;
-      if (post.published) {
-        posts.push(post);
-      }
-    }
-  }
-
-  posts = posts.sort(
-    (first, second) => new Date(second.date).getTime() - new Date(first.date).getTime(),
-  );
-
-  return posts;
+  return data.items;
 }
 
 export async function GET({ params }) {
-  const metadata = await getMetadata(params.leagueId);
+  const leagueMetadata = await getMetadata(params.leagueId);
   const posts = await getPosts(params.leagueId);
-  return json({ metadata, posts });
+  return json({ leagueMetadata, posts });
 }

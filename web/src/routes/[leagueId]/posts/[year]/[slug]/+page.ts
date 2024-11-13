@@ -1,14 +1,14 @@
 import { error } from '@sveltejs/kit';
 
-export async function load({ params }) {
+export async function load({ fetch, params }) {
   try {
-    const post = await import(
-      `../../../../../leagues/${params.leagueId}/posts/${params.year}/${params.slug}.md`
+    const postResponse = await fetch(
+      `/api/leagues/${params.leagueId}/posts/${params.year}/${params.slug}`,
     );
+    const post = await postResponse.json();
 
     return {
-      content: post.default,
-      meta: post.metadata,
+      post,
     };
   } catch (e) {
     console.error(e);

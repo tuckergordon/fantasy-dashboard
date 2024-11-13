@@ -12,14 +12,13 @@
 
 <nav class="list-nav">
   <ul class="m-0 p-0">
-    <!-- TODO: fix data loading error -->
     {#each $page.data.posts ?? [] as post}
       <li>
         <a
-          href="{$blogUrl}/{post.slug}"
-          class="{classesActive(`${$blogUrl}/${post.slug}`)} no-underline"
+          href="{$blogUrl}/{post.fields.slug}"
+          class="{classesActive(`${$blogUrl}/${post.fields.slug}`)} no-underline"
           style="white-space: pre-wrap">
-          {post.title.replace(' Recap', '')}
+          {post.fields.title.replace(' Recap', '')}
         </a>
       </li>
     {/each}
