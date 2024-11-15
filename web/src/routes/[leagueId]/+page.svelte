@@ -6,7 +6,7 @@
   const { leagueMetadata, posts, standings } = data;
 </script>
 
-<div class="prose dark:prose-invert mx-auto p-4 pt-12">
+<div class="prose mx-auto p-4 pt-12 dark:prose-invert">
   <section>
     {#if $page.data?.leagueAvatar}
       <img

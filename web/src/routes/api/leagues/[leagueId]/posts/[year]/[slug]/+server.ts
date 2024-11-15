@@ -12,7 +12,7 @@ async function getPost(leagueId: string, slug: string) {
     accessToken: import.meta.env.VITE_CONTENTFUL_CLIENT_ACCESS_TOKEN,
   });
 
-  let data = await client
+  const data = await client
     .getEntries<ContentfulRecap>({
       content_type: 'recap',
       'fields.leagueId': leagueId,
@@ -31,9 +31,7 @@ export async function GET({ params }) {
 
   const createdAt = new Date(post.sys.createdAt);
   const updatedAt = new Date(post.sys.updatedAt);
-  let { body, ...meta } = post.fields;
-
-  const rawContent = post.fields.body;
+  const { body, ...meta } = post.fields;
 
   const renderNode: RenderNode = {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
@@ -46,6 +44,6 @@ export async function GET({ params }) {
     renderNode,
   };
 
-  const content = await documentToHtmlString(rawContent, options);
+  const content = await documentToHtmlString(body, options);
   return json({ ...meta, content, createdAt, updatedAt });
 }

@@ -24,7 +24,7 @@ async function getPosts(leagueId: string) {
     accessToken: import.meta.env.VITE_CONTENTFUL_CLIENT_ACCESS_TOKEN,
   });
 
-  let data = await client
+  const data = await client
     .getEntries({ content_type: 'recap', 'fields.leagueId': leagueId })
     .catch((e) => {
       console.error(e);

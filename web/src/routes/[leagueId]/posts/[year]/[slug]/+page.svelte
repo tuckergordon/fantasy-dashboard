@@ -18,7 +18,7 @@
   <!-- <meta property="og:image" content={data.post.image} /> -->
 </svelte:head>
 
-<article class="prose dark:prose-invert mx-auto mb-8">
+<article class="prose mx-auto mb-8 dark:prose-invert">
   <hgroup>
     <div class="flex items-center justify-between">
       <span class="shrink-0 italic">{formatDate(data.post.createdAt)}</span>
@@ -46,6 +46,7 @@
       // need IDs to be unique otherwise ToC won't update between pages
       key: $page.url.pathname,
     }}>
+    <!-- eslint-disable-next-line svelte/no-at-html-tags -->
     {@html data.post.content}
   </div>
 
