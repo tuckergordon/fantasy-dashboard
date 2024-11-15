@@ -16,3 +16,11 @@ body {
   height: 100vh; /* Full viewport height */
   overflow-y: scroll; /* Enable vertical scrolling on the body */
 }
+
+/* TODO: This overrides styles so that the table rows don't get too big.
+A better solution would be to render the tables as a component, ideally 
+one that allows for sorting. */
+.prose tr > td > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
