@@ -1,4 +1,6 @@
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import type { ContentfulRecap } from '$lib/models/Contentful.model.js';
+import { documentToHtmlString, type RenderNode } from '@contentful/rich-text-html-renderer';
+import { BLOCKS } from '@contentful/rich-text-types';
 import { error, json } from '@sveltejs/kit';
 import { createClient } from 'contentful';
 
@@ -11,7 +13,11 @@ async function getPost(leagueId: string, slug: string) {
   });
 
   let data = await client
-    .getEntries({ content_type: 'recap', 'fields.leagueId': leagueId, 'fields.slug': slug })
+    .getEntries<ContentfulRecap>({
+      content_type: 'recap',
+      'fields.leagueId': leagueId,
+      'fields.slug': slug,
+    })
     .catch((e) => {
       console.error(e);
       throw error(500, 'Problem retrieving blog posts');
@@ -25,12 +31,21 @@ export async function GET({ params }) {
 
   const createdAt = new Date(post.sys.createdAt);
   const updatedAt = new Date(post.sys.updatedAt);
-  let { body, image, ...meta } = post.fields;
+  let { body, ...meta } = post.fields;
 
-  if (image) {
-    image = image.map((asset) => 'https:' + asset.fields.file.url);
-  }
   const rawContent = post.fields.body;
-  const content = await documentToHtmlString(rawContent);
-  return json({ ...meta, content, image, createdAt, updatedAt });
+
+  const renderNode: RenderNode = {
+    [BLOCKS.EMBEDDED_ASSET]: (node) => {
+      const { file, description } = node.data.target.fields;
+      return `<img src="${file.url}" height="${file.details.image.height}" width="${file.details.image.width}" alt="${description}"/>`;
+    },
+  };
+
+  const options = {
+    renderNode,
+  };
+
+  const content = await documentToHtmlString(rawContent, options);
+  return json({ ...meta, content, createdAt, updatedAt });
 }

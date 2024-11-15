@@ -14,7 +14,8 @@
   <title>{data.post.title}</title>
   <meta property="og:type" content="article" />
   <meta property="og:title" content={data.post.title} />
-  <meta property="og:image" content={data.post.image} />
+  <!-- TODO: use first image in content -->
+  <!-- <meta property="og:image" content={data.post.image} /> -->
 </svelte:head>
 
 <article class="prose dark:prose-invert mx-auto mb-8">
@@ -35,9 +36,6 @@
       </div>
     </div>
     <h1>{data.post.title}</h1>
-    {#if data.post.image}
-      <img src={data.post.image} alt="{data.post.title} image" />
-    {/if}
   </hgroup>
 
   <div
