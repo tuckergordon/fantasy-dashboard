@@ -6,7 +6,8 @@
   import { page } from '$app/stores';
 </script>
 
-<AppBar background="bg-primary-600 dark:bg-surface-500 text-surface">
+<AppBar
+  background="bg-primary-500 dark:bg-surface-500 text-on-primary-token dark:text-on-surface-token">
   <!-- Placeholder for now just to keep trail elements on the right -->
   {#snippet lead()}
     <a
@@ -28,7 +29,7 @@
 
   {#snippet trail()}
     <a
-      class="btn-icon hover:variant-soft-surface hover:text-on-primary-token !mx-0"
+      class="btn-icon !mx-0 hover:variant-soft-surface hover:text-on-primary-token"
       href="https://github.com/tuckergordon/mmish"
       target="_blank"
       rel="noreferrer">
