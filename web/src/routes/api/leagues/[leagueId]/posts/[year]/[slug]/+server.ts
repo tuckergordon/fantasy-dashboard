@@ -1,3 +1,4 @@
+import { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } from '$env/static/private';
 import type { ContentfulRecap } from '$lib/models/Contentful.model.js';
 import { documentToHtmlString, type RenderNode } from '@contentful/rich-text-html-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
@@ -7,9 +8,9 @@ import { createClient } from 'contentful';
 async function getPost(leagueId: string, slug: string) {
   const client = createClient({
     // This is the space ID. A space is like a project folder in Contentful terms
-    space: import.meta.env.VITE_CONTENTFUL_SPACE,
+    space: CONTENTFUL_SPACE_ID,
     // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-    accessToken: import.meta.env.VITE_CONTENTFUL_CLIENT_ACCESS_TOKEN,
+    accessToken: CONTENTFUL_ACCESS_TOKEN,
   });
 
   const data = await client
