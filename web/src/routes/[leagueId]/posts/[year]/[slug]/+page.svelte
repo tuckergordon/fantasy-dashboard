@@ -6,7 +6,6 @@
   import { tocCrawler, popup } from '@skeletonlabs/skeleton';
 
   let { data } = $props();
-  console.log(data);
 </script>
 
 <!-- SEO -->
@@ -18,7 +17,7 @@
   <!-- <meta property="og:image" content={data.post.image} /> -->
 </svelte:head>
 
-<article class="prose mx-auto mb-8 dark:prose-invert">
+<article class="prose dark:prose-invert mx-auto mb-8">
   <hgroup>
     <div class="flex items-center justify-between">
       <span class="shrink-0 italic">{formatDate(data.post.createdAt)}</span>
@@ -51,10 +50,11 @@
   </div>
 
   <!-- TODO: add a link that takes you to edit page on contentful -->
-  <!-- <a
-    href="https://github.com/tuckergordon/mmish/blob/main/web/src/leagues{$page.url.pathname}.md"
-    class="btn text-primary-500 p-0 no-underline hover:underline">
+  <a
+    href="https://app.contentful.com/spaces/u8rkbtuumsz9/entries/{data.post.postId}"
+    class="btn text-primary-500 p-0 no-underline hover:underline"
+    target="_blank">
     <Icon icon="material-symbols:edit" />
     <span>Edit this page</span>
-  </a> -->
+  </a>
 </article>

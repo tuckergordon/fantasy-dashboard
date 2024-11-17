@@ -6,6 +6,7 @@ import { json } from '@sveltejs/kit';
 export async function GET({ params }) {
   const post = await getPost(params.leagueId, params.slug);
 
+  const postId = post.sys.id;
   const createdAt = new Date(post.sys.createdAt);
   const updatedAt = new Date(post.sys.updatedAt);
   const { body, ...meta } = post.fields;
@@ -22,5 +23,5 @@ export async function GET({ params }) {
   };
 
   const content = documentToHtmlString(body, options);
-  return json({ ...meta, content, createdAt, updatedAt });
+  return json({ ...meta, content, createdAt, updatedAt, postId });
 }
