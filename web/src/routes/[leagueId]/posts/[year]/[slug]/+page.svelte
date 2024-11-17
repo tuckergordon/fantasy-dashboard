@@ -17,7 +17,7 @@
   <!-- <meta property="og:image" content={data.post.image} /> -->
 </svelte:head>
 
-<article class="prose dark:prose-invert mx-auto mb-8">
+<article class="prose mx-auto mb-8 dark:prose-invert">
   <hgroup>
     <div class="flex items-center justify-between">
       <span class="shrink-0 italic">{formatDate(data.post.createdAt)}</span>
@@ -52,7 +52,7 @@
   <hr />
   <a
     href="https://app.contentful.com/spaces/u8rkbtuumsz9/entries/{data.post.postId}"
-    class="btn text-primary-500 p-0 no-underline hover:underline"
+    class="btn p-0 text-primary-500 no-underline hover:underline"
     target="_blank">
     <Icon icon="material-symbols:edit" />
     <span>Edit this page</span>
