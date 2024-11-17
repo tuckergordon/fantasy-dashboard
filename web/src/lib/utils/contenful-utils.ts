@@ -21,7 +21,7 @@ export async function getPost(leagueId: string, slug: string) {
     })
     .catch((e) => {
       console.error(e);
-      throw error(500, 'Problem retrieving blog posts');
+      throw error(500, 'Problem retrieving blog post: ' + slug);
     });
 
   return data.items[0];

@@ -50,7 +50,6 @@
   </div>
 
   <hr />
-  <!-- TODO: add a link that takes you to edit page on contentful -->
   <a
     href="https://app.contentful.com/spaces/u8rkbtuumsz9/entries/{data.post.postId}"
     class="btn text-primary-500 p-0 no-underline hover:underline"
