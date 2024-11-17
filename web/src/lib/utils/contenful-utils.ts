@@ -4,7 +4,6 @@ import type { ContentfulRecap } from '$lib/models/Contentful.model';
 import { error } from '@sveltejs/kit';
 import { createClient } from 'contentful';
 
-console.log('Creating Contentful client');
 const client = createClient({
   space: CONTENTFUL_SPACE_ID,
   // Use the preview access token and host if we're in development so that the unpublished
