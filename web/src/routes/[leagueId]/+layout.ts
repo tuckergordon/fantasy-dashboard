@@ -1,4 +1,4 @@
-import { getStandings } from '$lib/sleeper-utils.js';
+import { getStandings } from '$lib/utils/sleeper-utils.js';
 
 export async function load({ fetch, params }) {
   const response = await fetch(`/api/leagues/${params.leagueId}`);

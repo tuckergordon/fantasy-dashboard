@@ -1,6 +1,5 @@
-import { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } from '$env/static/private';
-import { error, json } from '@sveltejs/kit';
-import { createClient } from 'contentful';
+import { getAllPosts } from '$lib/utils/contenful-utils';
+import { json } from '@sveltejs/kit';
 
 async function getMetadata(leagueId: string) {
   const paths = import.meta.glob('/src/leagues/*/meta.json', { eager: true });
@@ -17,26 +16,8 @@ async function getMetadata(leagueId: string) {
   }
 }
 
-async function getPosts(leagueId: string) {
-  const client = createClient({
-    // This is the space ID. A space is like a project folder in Contentful terms
-    space: CONTENTFUL_SPACE_ID,
-    // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-    accessToken: CONTENTFUL_ACCESS_TOKEN,
-  });
-
-  const data = await client
-    .getEntries({ content_type: 'recap', 'fields.leagueId': leagueId })
-    .catch((e) => {
-      console.error(e);
-      throw error(500, 'Problem retrieving blog posts');
-    });
-
-  return data.items;
-}
-
 export async function GET({ params }) {
   const leagueMetadata = await getMetadata(params.leagueId);
-  const posts = await getPosts(params.leagueId);
+  const posts = await getAllPosts(params.leagueId);
   return json({ leagueMetadata, posts });
 }

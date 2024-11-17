@@ -1,4 +1,4 @@
-import type { Roster, User } from './models/Sleeper.model';
+import type { Roster, User } from '../models/Sleeper.model';
 
 export async function getStandings(
   // The Svelte `fetch` function for better performance than window.fetch()

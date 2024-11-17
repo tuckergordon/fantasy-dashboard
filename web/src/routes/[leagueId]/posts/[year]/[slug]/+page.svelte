@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import PostsListNav from '$lib/components/PostsListNav.svelte';
-  import { formatDate } from '$lib/utils';
+  import { formatDate } from '$lib/utils/date-utils';
   import Icon from '@iconify/svelte';
   import { tocCrawler, popup } from '@skeletonlabs/skeleton';
 
