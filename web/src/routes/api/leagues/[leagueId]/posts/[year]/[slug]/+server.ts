@@ -11,10 +11,16 @@ export async function GET({ params }) {
   const updatedAt = new Date(post.sys.updatedAt);
   const { body, ...meta } = post.fields;
 
+  let image = '';
   const renderNode: RenderNode = {
     [BLOCKS.EMBEDDED_ASSET]: (node) => {
       const { file, description } = node.data.target.fields;
-      return `<img src="${file.url}" height="${file.details.image.height}" width="${file.details.image.width}" alt="${description}"/>`;
+      // Save the URL of the first image so that we can use it as the preview
+      // image for the post (e.g. what shows up when you text a link to the post)
+      if (!image) {
+        image = file.url;
+      }
+      return `<img src="https:${file.url}" height="${file.details.image.height}" width="${file.details.image.width}" alt="${description}"/>`;
     },
   };
 
@@ -23,5 +29,5 @@ export async function GET({ params }) {
   };
 
   const content = documentToHtmlString(body, options);
-  return json({ ...meta, content, createdAt, updatedAt, postId });
+  return json({ ...meta, content, createdAt, updatedAt, postId, image });
 }
