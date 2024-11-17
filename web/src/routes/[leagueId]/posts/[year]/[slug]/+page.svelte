@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import PostsListNav from '$lib/components/PostsListNav.svelte';
-  import { formatDate } from '$lib/utils';
+  import { formatDate } from '$lib/utils/date-utils';
   import Icon from '@iconify/svelte';
   import { tocCrawler, popup } from '@skeletonlabs/skeleton';
 
@@ -10,16 +10,18 @@
 
 <!-- SEO -->
 <svelte:head>
-  <title>{data.meta.title}</title>
+  <title>{data.post.title}</title>
   <meta property="og:type" content="article" />
-  <meta property="og:title" content={data.meta.title} />
-  <meta property="og:image" content={data.meta.image} />
+  <meta property="og:title" content={data.post.title} />
+  <!-- TODO: use first image in content -->
+  <!-- <meta property="og:image" content={data.post.image} /> -->
 </svelte:head>
 
 <article class="prose mx-auto mb-8 dark:prose-invert">
   <hgroup>
     <div class="flex items-center justify-between">
-      <span class="shrink-0 italic">{formatDate(data.meta.date)}</span>
+      <span class="shrink-0 italic">{formatDate(data.post.createdAt)}</span>
+      <!-- TODO: add updatedAt? -->
       <!-- popup button -->
       <button
         class="btn hover:variant-soft-primary lg:hidden"
@@ -32,10 +34,7 @@
         <PostsListNav />
       </div>
     </div>
-    <h1>{data.meta.title}</h1>
-    {#if data.meta.image}
-      <img src={data.meta.image} alt="{data.meta.title} image" />
-    {/if}
+    <h1>{data.post.title}</h1>
   </hgroup>
 
   <div
@@ -46,12 +45,15 @@
       // need IDs to be unique otherwise ToC won't update between pages
       key: $page.url.pathname,
     }}>
-    <data.content />
+    <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+    {@html data.post.content}
   </div>
 
+  <hr />
   <a
-    href="https://github.com/tuckergordon/mmish/blob/main/web/src/leagues{$page.url.pathname}.md"
-    class="btn p-0 text-primary-500 no-underline hover:underline">
+    href="https://app.contentful.com/spaces/u8rkbtuumsz9/entries/{data.post.postId}"
+    class="btn p-0 text-primary-500 no-underline hover:underline"
+    target="_blank">
     <Icon icon="material-symbols:edit" />
     <span>Edit this page</span>
   </a>
