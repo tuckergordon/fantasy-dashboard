@@ -12,6 +12,7 @@ A website for fantasy football leagues to view recaps, statistics, and other lea
 ## Prerequisites
 
 - A [Contenful](https://www.contentful.com/) account and access to our Contenful [space](https://app.contentful.com/spaces/u8rkbtuumsz9/)
+- (Optional) Install [pnpm](https://pnpm.io/), which is a more performant extension of npm
 
 ## Setup
 
