@@ -11,6 +11,9 @@ importers:
       '@contentful/rich-text-html-renderer':
         specifier: ^17.0.0
         version: 17.0.0
+      '@contentful/rich-text-types':
+        specifier: ^17.0.0
+        version: 17.0.0
       '@floating-ui/dom':
         specifier: ^1.6.12
         version: 1.6.12
