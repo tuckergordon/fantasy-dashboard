@@ -18,26 +18,23 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v4
-        run_install: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Check Svelte
-        run: pnpm run check:svelte
+        run: npm run check:svelte
 
       - name: Check Lint
-        run: pnpm run check:lint
+        run: npm run check:lint
 
       - name: Check Formatting
-        run: pnpm run check:format
+        run: npm run check:format
 
   build:
     name: Build
@@ -45,20 +42,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v4
-        run_install: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Build
-        run: pnpm run build
+        run: npm run build
 
   test:
     name: Test
@@ -66,17 +60,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v4
-        run_install: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Unit tests
-        run: pnpm run test:unit
+        run: npm run test:unit
+
+      # - name: Install Playwright Browsers
+      #   run: npx playwright install --with-deps
+
+      # - name: Playwright tests
+      #   run: npm run test:integration
