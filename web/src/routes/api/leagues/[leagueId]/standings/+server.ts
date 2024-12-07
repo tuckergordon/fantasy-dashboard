@@ -34,7 +34,7 @@ async function getStandings(leagueId: bigint, startWeek: number = 1, endWeek: nu
 
       return {
         teamId: standing.team_id,
-        // @ts-ignore
+        // @ts-expect-error - teams is not typed correctly yet
         teamName: standing.teams.name,
         wins,
         losses,
