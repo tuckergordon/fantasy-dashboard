@@ -34,7 +34,8 @@ async function getStandings(leagueId: bigint, startWeek: number = 1, endWeek: nu
 
       return {
         teamId: standing.team_id,
-        teamName: standing.teams?.name,
+        // @ts-ignore
+        teamName: standing.teams.name,
         wins,
         losses,
         pf: standing.points_for,

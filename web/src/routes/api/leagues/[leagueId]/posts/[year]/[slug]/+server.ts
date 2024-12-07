@@ -66,7 +66,7 @@ export async function GET({ params, fetch }) {
   const updatedAt = new Date(post.sys.updatedAt);
   const { body, ...meta } = post.fields;
 
-  let standings = standingsResponse ? await standingsResponse.json() : null;
+  const standings = standingsResponse ? await standingsResponse.json() : null;
 
   let image = '';
   const renderNode: RenderNode = {
