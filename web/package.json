@@ -11,7 +11,6 @@
     "check:lint": "eslint .",
     "check:svelte": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:svelte:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "gen:supabase-types": "source .env.local && supabase gen types typescript --project-id $SUPABASE_PROJECT_ID > src/lib/db/supabase/supabase.model.ts",
     "test": "npm run test:integration && npm run test:unit",
     "test:integration": "playwright test",
     "test:unit": "vitest"
