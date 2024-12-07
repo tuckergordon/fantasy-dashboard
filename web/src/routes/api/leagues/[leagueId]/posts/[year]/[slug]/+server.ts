@@ -47,22 +47,26 @@ function getStandingsHtml(standings: Standings) {
 }
 
 export async function GET({ params, fetch }) {
-  const post = await getPost(params.leagueId, params.slug);
+  // Technically could pull this out of the post, but then we wouldn't be able
+  // to query supabase until contentful responded
+  const week = extractWeekNumber(params.slug);
+
+  // Calls to supabase and contentful are independent
+  const [post, standingsResponse] = await Promise.all([
+    getPost(params.leagueId, params.slug),
+    week
+      ? fetch(
+          `/api/leagues/${params.leagueId}/standings?startWk=1&endWk=${extractWeekNumber(params.slug)}`,
+        )
+      : Promise.resolve(null),
+  ]);
 
   const postId = post.sys.id;
   const createdAt = new Date(post.sys.createdAt);
   const updatedAt = new Date(post.sys.updatedAt);
   const { body, ...meta } = post.fields;
 
-  const week = extractWeekNumber(params.slug);
-
-  let standings = null;
-  if (week) {
-    const standingsResponse = await fetch(
-      `/api/leagues/${params.leagueId}/standings?startWk=1&endWk=${week}`,
-    );
-    standings = await standingsResponse.json();
-  }
+  let standings = standingsResponse ? await standingsResponse.json() : null;
 
   let image = '';
   const renderNode: RenderNode = {
