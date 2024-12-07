@@ -1,15 +1,68 @@
-import { getPost } from '$lib/utils/contenful-utils';
+import { getPost } from '$lib/db/contentful/posts';
+import type { Standing, Standings } from '$lib/models/Standings.model';
 import { documentToHtmlString, type RenderNode } from '@contentful/rich-text-html-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
 import { json } from '@sveltejs/kit';
 
-export async function GET({ params }) {
+function extractWeekNumber(slug: string): number | null {
+  const match = slug.match(/week-(\d+)/);
+  if (match && match[1]) {
+    return parseInt(match[1], 10);
+  }
+  return null;
+}
+
+// TODO: figure out a way to render a svelte component instead of this
+// weird JSX-like approach
+function getStandingsHtml(standings: Standings) {
+  const row = (team: Standing, i: number) =>
+    (i === 6 ? `<tr><td></td></tr>` : '') +
+    `<tr>
+      <td>
+        ${i + 1}
+      </td>
+      <td>
+        ${team.teamName}
+      </td>
+      <td>
+        ${team.wins}-${team.losses}
+      </td>
+    </tr>`;
+  return `
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Record</th>
+          <!-- <th>PF</th>
+          <th>PA</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        ${standings.map(row).join('')}
+      </tbody>
+    </table>
+  `;
+}
+
+export async function GET({ params, fetch }) {
   const post = await getPost(params.leagueId, params.slug);
 
   const postId = post.sys.id;
   const createdAt = new Date(post.sys.createdAt);
   const updatedAt = new Date(post.sys.updatedAt);
   const { body, ...meta } = post.fields;
+
+  const week = extractWeekNumber(params.slug);
+
+  let standings = null;
+  if (week) {
+    const standingsResponse = await fetch(
+      `/api/leagues/${params.leagueId}/standings?startWk=1&endWk=${week}`,
+    );
+    standings = await standingsResponse.json();
+  }
 
   let image = '';
   const renderNode: RenderNode = {
@@ -21,6 +74,14 @@ export async function GET({ params }) {
         image = file.url;
       }
       return `<img src="https:${file.url}" height="${file.details.image.height}" width="${file.details.image.width}" alt="${description}"/>`;
+    },
+    [BLOCKS.EMBEDDED_ENTRY]: (node) => {
+      switch (node.data.target.fields.type) {
+        case 'standings':
+          return getStandingsHtml(standings);
+        default:
+          return '';
+      }
     },
   };
 
