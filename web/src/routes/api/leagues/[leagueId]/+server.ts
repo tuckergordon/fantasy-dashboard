@@ -1,4 +1,4 @@
-import { getAllPosts } from '$lib/utils/contenful-utils';
+import { getAllPosts } from '$lib/db/contentful/posts';
 import { json } from '@sveltejs/kit';
 
 async function getMetadata(leagueId: string) {
