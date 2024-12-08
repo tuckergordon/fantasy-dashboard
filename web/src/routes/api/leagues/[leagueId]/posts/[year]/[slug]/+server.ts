@@ -1,5 +1,5 @@
+import { StandingsTable } from '$lib/components/StandingsTable.js';
 import { getPost } from '$lib/db/contentful/posts';
-import type { Standing, Standings } from '$lib/models/Standings.model';
 import { documentToHtmlString, type RenderNode } from '@contentful/rich-text-html-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
 import { json } from '@sveltejs/kit';
@@ -10,40 +10,6 @@ function extractWeekNumber(slug: string): number | null {
     return parseInt(match[1], 10);
   }
   return null;
-}
-
-// TODO: figure out a way to render a svelte component instead of this
-// weird JSX-like approach
-function getStandingsHtml(standings: Standings) {
-  const row = (team: Standing, i: number) =>
-    (i === 6 ? `<tr><td></td></tr>` : '') +
-    `<tr>
-      <td>
-        ${i + 1}
-      </td>
-      <td>
-        ${team.teamName}
-      </td>
-      <td>
-        ${team.wins}-${team.losses}
-      </td>
-    </tr>`;
-  return `
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>Name</th>
-          <th>Record</th>
-          <!-- <th>PF</th>
-          <th>PA</th> -->
-        </tr>
-      </thead>
-      <tbody>
-        ${standings.map(row).join('')}
-      </tbody>
-    </table>
-  `;
 }
 
 export async function GET({ params, fetch }) {
@@ -82,7 +48,7 @@ export async function GET({ params, fetch }) {
     [BLOCKS.EMBEDDED_ENTRY]: (node) => {
       switch (node.data.target.fields.type) {
         case 'standings':
-          return getStandingsHtml(standings);
+          return StandingsTable(standings);
         default:
           return '';
       }

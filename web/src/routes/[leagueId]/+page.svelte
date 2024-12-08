@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import Standings from '$lib/components/Standings.svelte';
+  import { StandingsTable } from '$lib/components/StandingsTable.js';
 
   let { data } = $props();
   const { leagueMetadata, posts, standings } = data;
@@ -20,7 +20,8 @@
   <section class="justify-between md:flex">
     <div>
       <h2>Standings</h2>
-      <Standings {standings} />
+      <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+      {@html StandingsTable(standings)}
     </div>
 
     <ul class="posts mt-0">
