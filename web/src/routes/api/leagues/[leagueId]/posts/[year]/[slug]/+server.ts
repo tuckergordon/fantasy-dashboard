@@ -1,3 +1,4 @@
+import { LotteryTable } from '$lib/components/LotteryTable.js';
 import { StandingsTable } from '$lib/components/StandingsTable.js';
 import { getPost } from '$lib/db/contentful/posts';
 import { documentToHtmlString, type RenderNode } from '@contentful/rich-text-html-renderer';
@@ -49,6 +50,8 @@ export async function GET({ params, fetch }) {
       switch (node.data.target.fields.type) {
         case 'standings':
           return StandingsTable(standings);
+        case 'lottery':
+          return LotteryTable(standings);
         default:
           return '';
       }
