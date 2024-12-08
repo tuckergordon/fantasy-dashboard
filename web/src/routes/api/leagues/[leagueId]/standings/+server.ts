@@ -7,13 +7,12 @@ async function getStandings(leagueId: bigint, startWeek: number = 1, endWeek: nu
     .from('schedule')
     .select(
       `
-      team_id, 
       win_h2h:win_h2h.sum(), 
       win_median: win_median.sum(),
       points_for: points_for.sum(),
       points_against: points_against.sum(),
       max_points_for: max_points_for.sum(),
-      teams:team_id(id, name)
+      teams!inner(name)
       `,
     )
     .eq('league_id', leagueId)
@@ -33,7 +32,6 @@ async function getStandings(leagueId: bigint, startWeek: number = 1, endWeek: nu
       const losses = totalWeeks * 2 - wins;
 
       return {
-        teamId: standing.team_id,
         // @ts-expect-error - teams is not typed correctly yet
         teamName: standing.teams.name,
         wins,
