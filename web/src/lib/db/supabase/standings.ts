@@ -55,6 +55,6 @@ export async function getStandings(leagueId: bigint, startWeek: number = 1, endW
       if (b.wins === a.wins) {
         return b.pf - a.pf;
       }
-      return b.wins - a.wins);
+      return b.wins - a.wins;
     });
 }
